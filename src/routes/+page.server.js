@@ -23,7 +23,7 @@ export const actions = {
                 }
             });
             console.log(pop.dns);
-			const res = await fetch(`${pop.dns}/ping/${host}`);
+			const res = await fetch(`${pop.dns}/${type}/${host}`);
 			// Its encapsulated in a few data objects.
 			console.log(res);
 			return res.json();
