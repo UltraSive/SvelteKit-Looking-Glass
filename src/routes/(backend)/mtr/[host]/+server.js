@@ -22,7 +22,7 @@ export async function GET(event) {
 
 	try {
 		const output = await ping();
-		console.log(output);
+		//console.log(output);
 		return json({ result: 'success', output });
 	} catch (err) {
 		console.error(err);
